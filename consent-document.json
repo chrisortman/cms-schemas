@@ -1,0 +1,36 @@
+{
+  "title": "Consent Document",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+
+    "publishedOn" : {
+      "type": "string",
+      "format": "date-time"
+    },
+
+    "sections" : {
+      "type": "array",
+      "items": {
+        "title": "Consent Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "researchKitType": {
+            "type": "string"
+          },
+          "learnMoreButtonTitle": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
